@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed Resenha</title>
+   <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/3a315e9c9b5ed9f5167511fd8e771e70.jpg" alt="Logo Wed Resenha" class="logo">
+        <h1>Bem-vindo ao Wed Resenha!</h1>
+        <p>Um espaço para amizade e diversão no WhatsApp.</p>
+        <button class="btn" onclick="window.location.href='https://chat.whatsapp.com/KHYXSMCJPy5HpQIwyKXSQN'">Entrar no Grupo</button>
+        <button class="btn" onclick="toggleModal('modal-cronograma')">Ver Cronograma</button>
+        <button class="btn" onclick="toggleModal('modal-info')">Mais Informações</button>
+    </div>
+    
+    <div id="modal-info" class="modal">
+        <h2>Sobre o Grupo</h2>
+        <p>⚠AVISO ⚠
+
+            aqui é tudo na zueira; se caso leva a sério esse tipo de conteúdo, é melhor sair pra não ficar causando confusão pq nós não é babá. E se caso se sente ofendido, avisa pra não aumentar a briga.
+            
+            Sem pornografia ou qualquer coisa do tipo;
+            Sem links ou outras coisas que possam prejudicar os membros;
+            Sem flopa figurinhas;
+            Sem brigas desnecessárias;
+            saber brincadeira na hora certa;
+            sem fantasmas no grupo;
+            respeita a mãe;
+            Atenção 🚨
+            Qualquer tipo de desrespeito aos ADM ou infringir as regras do grupo(ou outro coisa que não foi dita que caiba a nós julgar) é ban, sendo permanente ou provisório, dependendo da gravidade, qualquer dúvidas, chamar ADM no PV.
+            
+            ✅ O resto pode tudo! ✅
+            É isso FML, sejam bem vindos(a) a nosso wed resenha, participe, interaga e se divirta!</p>
+        <button onclick="toggleModal('modal-info')">Fechar</button>
+    </div>
+
+    <div id="modal-cronograma" class="modal">
+        <h2>Cronograma</h2>
+        <p>Cronograma da Semana
+            Segunda-feira: Verdades e Consequências – 22:30
+            Terça-feira: Eu Nunca – 22:30
+            Quarta-feira: Forca – 22:30
+            Quinta-feira: Revelação – 22:30
+            Sexta-feira: História – 23:00
+            Sábado & Domingo: Conversa Livre</p>
+        <button onclick="toggleModal('modal-cronograma')">Fechar</button>
+    </div>
+
+    <script>
+        function toggleModal(id) {
+            let modal = document.getElementById(id);
+            if (modal.style.display === "block") {
+                modal.style.display = "none";
+            } else {
+                modal.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
